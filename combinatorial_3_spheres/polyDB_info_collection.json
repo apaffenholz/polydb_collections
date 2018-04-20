@@ -1,0 +1,58 @@
+{
+    "_id" : "Polytopes.SmallSpheresDim4.2.0",
+    "description" : "All combinatorial 3-spheres with up to 9 vertices together with information about their realizability. For up to seven vertices this was obtained by Perles (see [Grünbaum 1967]), for eight vertices by Altshuler and Steinberg, and for nine vertices by Firsching. For all entries the database contains the incidence matrix (VERTICES_IN_FACETS) information about realizability (REALIZABLE), the f-vector (F_VECTOR), the number of vertices and facets (N_VERTICES, N_FACETS), and the information whether the sphere is simple of simplicial (SIMPLE, SIMPLICIAL). For realizable spheres with nine vertices (i.e. 4-polytopes with nine vertices) there is also a list of vertices (VERTICES), while for the non-realizable spheres with nine vertices there is also a proof of non-realizability that depends on a possibly incomplete computation of the chirotope (PARTIAL_CHIROTOPE). This proof can be of one of three types. The first two depend on the Grassmann-Plücker relations. In the first type the chirotope contains enough information to find a violated relation, and the three involved terms are given. In the second type two relations are given that would allow to deduce a not yet known entry of the chirotope, but do not infer the same value. In the last type there is a complete chirotope, but the linear program to the biquadratic final polynomial is infeasible, and the linear program is given. For a detailed explanation of the proofs see the paper of Firsching.",
+    "description_html" : "All combinatorial 3-spheres with up to 9 vertices together with information about their realizability.<br/> For <ul><li> up to seven vertices this was obtained by Perles (see [Grünbaum 1967]),</li> <li> eight vertices this was obtained by Altshuler and Steinberg (Altshuler and Steinberg 1985), </li><li> nine vertices this was obtained by Firsching (Firsching 2018).</li></ul> For all entries the database contains the incidence matrix (VERTICES_IN_FACETS) information about realizability (REALIZABLE), the f-vector (F_VECTOR), the number of vertices and facets (N_VERTICES, N_FACETS), and the information whether the sphere is simple of simplicial (SIMPLE, SIMPLICIAL).<br/> For realizable spheres with nine vertices (i.e. 4-polytopes with nine vertices) there is also a list of vertices (VERTICES), while for the non-realizable spheres with nine vertices there is also a proof of non-realizability that depends on a possibly incomplete computation of the chirotope (PARTIAL_CHIROTOPE). This proof can be of one of three types. The first two depend on the Grassmann-Plücker relations. In the first type the chirotope contains enough information to find a violated relation, and the three involved terms are given. In the second type two relations are given that would allow to deduce a not yet known entry of the chirotope, but do not infer the same value. In the last type there is a complete chirotope, but the linear program to the biquadratic final polynomial is infeasible, and the linear program is given. For a detailed explanation of the proofs see the paper of Firsching (Firsching 2018).<br/>Please cite the appropriate papers if you use the data.",
+    "references" : [ 
+        {
+            "title" : "The complete enumeration of 4-polytopes and 3-spheres with nine vertices",
+            "authors" : "Moritz Firsching",
+            "links" : [ 
+                {
+                    "link" : "https://arxiv.org/abs/1803.05205",
+                    "type" : "arxiv"
+                }
+            ],
+            "bib" : "arxiv 1803.05205"
+        }, 
+        {
+            "bib" : "Wiley 1967",
+            "authors" : "Branko Grünbaum",
+            "title" : "Convex Polytopes"
+        }, 
+        {
+            "authors" : "Amos Altshuler and Leon Steinberg",
+            "bib" : "Pacific Journal of Mathematics, 117(1), pp. 1-16, 1985",
+            "title" : "The complete enumeration of the 4-polytopes and 3-spheres with eight vertices"
+        }
+    ],
+    "webpage" : [ 
+        {
+            "description" : "web page with original data",
+            "address" : "http://page.mi.fu-berlin.de/moritz/polys/inscribe/"
+        }
+    ],
+    "maintainer" : [ 
+        {
+            "name" : "Andreas Paffenholz",
+            "affiliation" : "TU Darmstadt",
+            "email" : "paffenholz@opt.tu-darmstadt.de"
+        }
+    ],
+    "col" : "SmallSpheresDim4",
+    "contributor" : [ 
+        {
+            "affiliation" : "TU Darmstadt",
+            "email" : "paffenholz@opt.tu-darmstadt.de",
+            "name" : "Andreas Paffenholz"
+        }
+    ],
+    "db" : "Polytopes",
+    "polydb_version" : "2.0",
+    "author" : [ 
+        {
+            "email" : "firsching@math.fu-berlin.de",
+            "affiliation" : "FU Berlin",
+            "name" : "Moritz Firsching"
+        }
+    ]
+}

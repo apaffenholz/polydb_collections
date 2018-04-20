@@ -1,0 +1,58 @@
+{
+    "_id" : "small_spheres.polymake",
+    "polydb_version" : "2.0",
+    "type" : "polytope::Polytope<Rational>",
+    "col" : "SmallSpheresDim4",
+    "json_modifier" : "sub { my $po = shift; $po->{\"DIM\"} = $po->{\"COMBINATORIAL_DIM\"}; delete($po->{\"COMBINATORIAL_DIM\"}); }",
+    "version" : "3.2",
+    "description" : "Combinatorial Spheres with up to 9 vertices",
+    "key" : "small_spheres",
+    "app" : "polytope",
+    "db" : "Polytopes",
+    "property_mask" : {
+        "VERTICES" : {
+            "int" : 1,
+            "dense" : 1
+        },
+        "N_VERTICES" : {
+            "int" : 1
+        },
+        "N_FACETS" : {
+            "int" : 1
+        },
+        "SIMPLE" : {
+            "bolean" : 1
+        },
+        "SIMPLICIAL" : {
+            "bolean" : 1
+        },
+        "COMBINATORIAL_DIM" : {
+            "temporary" : 1,
+            "int" : 1
+        },
+        "F_VECTOR" : {
+            "int" : 1
+        },
+        "VERTICES_IN_FACETS" : {
+            "int" : 1
+        },
+        "DIM" : {
+            "int" : 1
+        },
+        "attachments" : {
+            "REALIZABLE" : {
+                "boolean" : 1
+            },
+            "PARTIAL_CHIROTOPE" : 1,
+            "TYPE" : {
+                "int" : 1
+            },
+            "UNSATISFIED_GRASSMANN_PLUECKER_RELATION" : 1,
+            "CONTRADICTING_ELEMENT" : 1,
+            "CONTRADICTING_GRASSMANN_PLUECKER_RELATIONS" : 1,
+            "INFEASIBLE_LP" : 1,
+            "VARIABLE_NAMES" : 1
+        }
+    },
+    "contributor" : "Andreas Paffenholz"
+}
